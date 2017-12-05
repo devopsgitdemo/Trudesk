@@ -1,0 +1,21 @@
+sudo: false
+language: node_js
+node_js:
+  - 7
+  - node
+services:
+  - mongodb
+
+cache: yarn
+
+before_install:
+  - npm install -g grunt
+  - npm install -g grunt-cli
+
+script:
+  - npm run build
+  - npm test
+
+after_success:
+#  - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive && ./node_modules/.bin/istanbul-coveralls
+  - npm run codacy
