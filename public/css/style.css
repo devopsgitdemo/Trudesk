@@ -1,0 +1,10 @@
+.top-bar, .top-nav {
+    background: #c12021 !important;height:50px;line-height: 50px;
+}
+.top-bar-section ul li{background: none !important;height:50px;line-height: 50px;}
+.top-bar-section ul li a{background: none !important;height:50px;line-height: 50px;}
+.logo{height:50px !important;}
+.sidebar{top:50px !important;}
+.top-menu{height:50px !important;}
+.top-bar-section ul li.top-bar-icon a i.material-icons, .top-bar-section ul li.top-bar-icon a svg.material-icons, .top-bar-section ul li.top-bar-icon i.material-icons, .top-bar-section ul li.top-bar-icon svg.material-icons{line-height: 45px;}
+
